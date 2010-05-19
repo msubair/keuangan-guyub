@@ -14,6 +14,6 @@
 
 Untuk tata cara berkontribusi bisa dilihat di bagian CaraBerkontribusi.
 
-Fyi, melihat progress dari fitur yang sedang dalam progress bisa dilihat pada ToDoList.
+Fyi, melihat progress dari fitur yang sedang dalam progress bisa dilihat pada DaftarFitur.
 
 Apabila ada yang ingin ditanyakan atau Anda ingin menjadi kontributor, silahkan tuliskan pada kolom komentar di bawah ini
