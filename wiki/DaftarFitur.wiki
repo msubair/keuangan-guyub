@@ -38,7 +38,7 @@
   # Memiliki interface yang menarik, namun tetap sederhana sehingga nyaman dan mudah digunakan.
   # Keuangan Guyub dapat berjalan di hampir semua sistem operasi (cross platform), baik klien maupun server (linux, windows, mac, dll)
   # Mempunyai fasilitas multiuser dan untuk keamanan data maka setiap input jurnal maka aplikasi akan juga merekam ke database id dari user tersebut.
-  # Aplikasi sangat ringan dan responsif. Khusus untuk program inti untuk versi saat ini hanya membutuhkan space < ----- Kb.
+  # Aplikasi sangat ringan dan responsif. Untuk perangkat keras juga hanya membutuhkan perangkat keras dengan spesifikasi rendah.
   # Aplikasi berbasis web, sehingga cukup melakukan instalasi pada server, maka klien dari komputer dalam satu jaringan yang berbeda langsung dapat mengakses aplikasi melalui browser tanpa instalasi di sisi klien.
   # Telah menggunakan AJAX.
   # Menggunakan validasi berlapis pada sisi klien (javascript) dan server (PHP) pada beberapa bagian yang diperlukan. Selain itu pada beberapa inputan dari user telah disediakan fasilitas pembantu, seperti drop down list, datepicker, pop up pencarian pilihan inputan dll.
