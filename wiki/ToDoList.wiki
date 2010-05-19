@@ -1,0 +1,19 @@
+#labels todolist,kontributor,progress,pic
+#Daftar Pekerjaan dan Rencana Pekerjaan
+
+|| *No* || *Nama Pekerjaan* || *PIC (email)* || *Progress* || *Keterangan* ||
+|| 1 || Laporan Arus Kas || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
+|| 2 || Input Logo Perusahaan untuk laporan || 	- || - || - ||
+|| 3 || Pilihan format laporan CSV, selain PDF || - || - || - ||
+|| 4 || Perbaikan sistem menu dan manajemen login dan hak akses pengguna || - || - || - ||
+|| 5 || Grafik Laba Rugi Bulanan dengan Open Flash Chart pada Home || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
+|| 6 || Laporan Perubahan Modal || Tim Guyub (keuangan@guyub.co.id) || 10% || - || 
+|| 7 || Perhitungan dan laporan pajak tahunan || Tim Guyub (keuangan@guyub.co.id) || - || - ||
+|| 8 || Dokumentasi Petunjuk Pengguna versi KG-20100512-1  || Tim Guyub (keuangan@guyub.co.id) || 100% || Sudah dirilis untuk versi, walau masih perlu diperbaiki beberapa typo  ||
+|| 9 || Lebih merapikan css dan js yang digunakan (termasuk membuang yang tidak perlu)  || Tim Guyub (keuangan@guyub.co.id) || 20% || - ||
+
+Untuk tata cara berkontribusi bisa dilihat di bagian CaraBerkontribusi.
+
+Fyi, melihat progress dari fitur yang sedang dalam progress bisa dilihat pada ToDoList.
+
+Apabila ada yang ingin ditanyakan atau Anda ingin menjadi kontributor, silahkan tuliskan pada kolom komentar di bawah ini
