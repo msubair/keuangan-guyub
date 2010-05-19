@@ -1,0 +1,16 @@
+#labels rilis,standar,aplikasi,dokumentasi,versi
+#Rilis Keuangan Guyub
+
+= Standar nama versi rilis =
+
+Standarnya rilis [KeuanganGuyub Keuangan Guyub] menggunakan standar {{{KeuanganGuyub-(tahun)(bulan)(tanggal)-(nomor rilis terhitung sejak pertama kali dirilis)}}}.
+
+Jadi semisal Anda menemukan versi dari [KeuanganGuyub Keuangan Guyub] dengan nama {{{KeuanganGuyub-20100804-3}}} maka itu artinya adalah versi yang dirilis pada tanggal 4 Agustus 2010 dan merupakan rilis resmi ketiga.
+
+= Jadwal Rilis =
+
+[KeuanganGuyub Keuangan Guyub] tidak akan mempunyai jadwal rilis teratur, akan tetapi di awal rilis sampai mencapai versi yang stabil dan memenuhi [DaftarFitur semua daftar fitur yang diharapkan] [KeuanganGuyub Keuangan Guyub] akan rilis paling lambat setiap 2 bulan.
+
+= Dokumentasi Pengguna =
+
+Setiap rilis Keuangan Guyub akan disertai dengan rilis dokumentasi pengguna (PDF). Nama standar file dari dokumentasi pengguna adalah; {{{DokumentasiPengguna-(versi rilis aplikasi)}}}. Jika ada revisi penting pada dokumentasi tersebut dan diterbitkan dokumentasi baru untuk sebuah rilis aplikasi, maka namanya akan berubah menjadi {{{DokumentasiPengguna-(versi rilis aplikasi)-revisi-(nomor revisi)}}}.
