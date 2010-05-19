@@ -1,7 +1,8 @@
+#labels todolist,pic,progress,kontributor
 #Daftar Pekerjaan dan Rencana Pekerjaan
 
 || *No* || *Nama Pekerjaan* || *PIC (email)* || *Progress* || *Keterangan* ||
-|| Laporan Arus Kas || Tim Guyub || (keuangan@guyub.co.id) || 10% || - ||
+|| 1 || Laporan Arus Kas || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
 || 2 || Input Logo Perusahaan untuk laporan || - || - || - ||
 || 3 || Pilihan format laporan CSV, selain PDF || - || - || - ||
 || 4 || Perbaikan sistem menu dan manajemen login pengguna || -	|| - || - ||
