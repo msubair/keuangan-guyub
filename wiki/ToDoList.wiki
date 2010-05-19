@@ -14,6 +14,4 @@
 
 Untuk tata cara berkontribusi bisa dilihat di bagian [http://code.google.com/p/keuangan-guyub/wiki/CaraBerkontribusi CaraBerkontribusi].
 
-Fyi, melihat progress dari fitur yang sedang dalam progress bisa dilihat pada [http://code.google.com/p/keuangan-guyub/wiki/ToDoList ToDoList], sedangkan detail log perubahan bisa dilihat [http://code.google.com/p/keuangan-guyub/wiki/ChangeLog ChangeLog].
-
 Apabila ada yang ingin ditanyakan atau Anda ingin menjadi kontributor, silahkan tuliskan pada kolom komentar di bawah ini;
