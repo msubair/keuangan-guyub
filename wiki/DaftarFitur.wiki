@@ -43,7 +43,7 @@
   # Telah menggunakan AJAX.
   # Menggunakan validasi berlapis pada sisi klien (javascript) dan server (PHP) pada beberapa bagian yang diperlukan. Selain itu pada beberapa inputan dari user telah disediakan fasilitas pembantu, seperti drop down list, datepicker, pop up pencarian pilihan inputan dll.
   # Menggunakan engine InnoDB dari MySQL yang telah mendukung transaksi, sehingga data keuangan lebih terjamin validitasnya.
-  # Berbagai dukungan untuk pengguna, baik dalam bentuk tutorial PDF, web blog, mailing list, dll.
+  # Berbagai dukungan untuk pengguna, baik dalam bentuk tutorial PDF, [http://keuangan.guyub.co.id blog], mailing list, dll.
 
 = Usulan Fitur =
 
