@@ -14,4 +14,6 @@
 
 Untuk tata cara berkontribusi bisa dilihat di bagian [http://code.google.com/p/keuangan-guyub/wiki/CaraBerkontribusi CaraBerkontribusi].
 
+Fyi, untuk proyek ini kami sengaja memisahkan info dan daftar kontribusi fitur, dokumentasi, dll yang bersifat pengembangan atau baru di halaman wiki ToDoList ini, sedangkan bugs akan diinfokan di [http://code.google.com/p/keuangan-guyub/issues/list halaman Issues].
+
 Apabila ada yang ingin ditanyakan atau Anda ingin menjadi kontributor, silahkan tuliskan pada kolom komentar di bawah ini;
