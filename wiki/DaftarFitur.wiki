@@ -1,0 +1,45 @@
+#labels fitur,fasilitas,kelebihan,keunggulan
+# Daftar Fitur Keuangan GUyub
+
+= Fitur-fitur yang telah ada sampai versi terakhir =
+
+== Fitur Akuntansi ==
+  # Buku Besar
+  # Jurnal
+  # Input Jurnal Umum
+  # Input Jurnal Penyesuaian
+  # Input Jurnal Penutup
+  # Input Jurnal Koreksi
+
+== Fitur Manajemen Aplikasi ==
+  # Manajemen Pengguna
+  # Manajemen Data Perusahaan Wajib Pajak
+  # Manajemen Akun
+	
+== Fitur Manajemen Proyek ==
+  # Klien
+  # Proyek
+  # Jurnal Proyek
+	
+== Fitur Laporan Keuangan ==
+  # Laporan Laba Rugi (PDF)
+  # Laporan Neraca Saldo Sebelum Penyesuaian (PDF)
+  # Laporan Neraca Saldo Setelah Penyesuaian (PDF)
+  # Neraca Saldo Setelah Penutupan (PDF)
+  # Laporan Laba Rugi Proyek (PDF)
+	
+== Fitur Laporan Pajak ==
+  # Laporan Pajak PPh 21 (PDF)
+  # Laporan SSP -Surat Setoran Pajak (PDF)
+	
+== Sedangkan kelebihan yang merupakan fitur penunjang lainnya adalah;==
+  # Hadir dengan Lisensi Open Source, GNU/GPL versi 3
+  # Memiliki interface yang menarik, namun tetap sederhana sehingga nyaman dan mudah digunakan.
+  # Keuangan Guyub dapat berjalan di hampir semua sistem operasi (cross platform), baik klien maupun server (linux, windows, mac, dll)
+  # Mempunyai fasilitas multiuser dan untuk keamanan data maka setiap input jurnal maka aplikasi akan juga merekam ke database id dari user tersebut.
+  # Aplikasi sangat ringan dan responsif. Khusus untuk program inti untuk versi saat ini hanya membutuhkan space < ----- Kb.
+  # Aplikasi berbasis web, sehingga cukup melakukan instalasi pada server, maka klien dari komputer dalam satu jaringan yang berbeda langsung dapat mengakses aplikasi melalui browser tanpa instalasi di sisi klien.
+  # Telah menggunakan AJAX.
+  # Menggunakan validasi berlapis pada sisi klien (javascript) dan server (PHP) pada beberapa bagian yang diperlukan. Selain itu pada beberapa inputan dari user telah disediakan fasilitas pembantu, seperti drop down list, datepicker, pop up pencarian pilihan inputan dll.
+  # Menggunakan engine InnoDB dari MySQL yang telah mendukung transaksi, sehingga data keuangan lebih terjamin validitasnya.
+  # Berbagai dukungan untuk pengguna, baik dalam bentuk tutorial PDF, web blog, mailing list, dll.
