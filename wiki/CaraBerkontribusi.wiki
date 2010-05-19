@@ -1,0 +1,11 @@
+#labels kontribusi,komunitas,tim
+#Cara Berkontribusi di proyek Keuangan Guyub
+
+Setelah rilis versi pertama maka akan menerima kontributor di luar Guyub, dengan kontrol rilis proyek Keuangan Guyub tetap dipegang dan dipelihara oleh Guyub. Metode kerjasama dengan kontributor diatur sederhana, dimana tahapannya adalah;
+  # Kontributor menghubungi PM dan sekaligus Owner Keuangan Guyub (http://code.google.com/p/keuangan-guyub/people/detail?u=msubair)
+  # Selanjutnya apabila diterima maka PM akan melakukan konfirmasi dan menuliskan informasinya setidaknya di ToDoList (http://code.google.com/p/keuangan-guyub/wiki/ToDoList) tentang pekerjaan tersebut (keterangan, PIC, dll) dan tetap memberi support yang dibutuhkan kontributor.
+  # Selama pengerjaan kontributor dianjurkan (tidak wajib) melakukan update progress. 
+  # Setelah selesai kontributor melakukan konfirmasi dan memberikan hasil pekerjaannya kepada PM.
+  # Selanjutnya PM melakukan pemeriksaan dan penggabungan untuk selanjutnya dirilis pada versi berikutnya.
+
+Selain itu, semua koordinasi tim juga akan diusahakan terbuka dan dilakukan di media [http://code.google.com/p/keuangan-guyub/ Google Code], [http://groups.google.com/group/keuangan-guyub mailing list], dll.	
