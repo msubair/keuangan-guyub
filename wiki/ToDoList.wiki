@@ -1,5 +1,3 @@
-#ToDoList
-
 #Daftar Pekerjaan dan Rencana Pekerjaan
 
 || *No* || *Nama Pekerjaan* || *PIC (email)* || *Progress* || *Keterangan* ||
