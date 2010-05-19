@@ -1,33 +1,33 @@
-#labels panduan,instalasi,aplikasi
+#labels panduan,instalasi,aplikasi,klien,server,database,webserver
 #Panduan Singkat Instalasi Keuangan Guyub
 
 =Server=
 
 == Persyaratan ==
 
-Pastikan Anda sudah menyiapkan web server pada PC yang akan dijadikan server. Pastikan server tersebut dapat menjalankan web PHP dan database MySQL dengan engine InnoDB.
+Pastikan Anda sudah menyiapkan web server pada PC yang akan dijadikan server. Pastikan server tersebut dapat menjalankan web PHP dan database MySQL dengan [http://dev.mysql.com/doc/refman/5.0/en/innodb.html engine InnoDB].
 
-Untuk web server Anda bisa menggunakan aplikasi semacam Apache, Lighttpd , dsb.
+Untuk web server Anda bisa menggunakan aplikasi semacam [http://httpd.apache.org/ Apache], Lighttpd , dsb.
 
 == Langkah-langkah ==
 
-1. Download file kompresi aplikasi Keuangan Guyub terbaru dari Project Hosting Keuangan Guyub, misal {{{KG-20100512-1.zip}}}.
+*1. Download file kompresi aplikasi Keuangan Guyub terbaru dari [http://code.google.com/p/keuangan-guyub/downloads/list Project Hosting Keuangan Guyub], misal {{{KG-20100512-1.zip}}}.*
 
-2. Extract file tersebut di direktori utama web server pada PC server Anda, misal pada beberapa distro GNU/LInux letaknya adalah pada /var/www.
+*2. Extract file tersebut di direktori utama web server pada PC server Anda, misal pada beberapa distro GNU/LInux letaknya adalah pada /var/www.*
 
 Catatan: Demi keamanan standar permission dari file aplikasi Keuangan Guyub adalah 755 untuk semua direktori dan 644 untuk semua file selain direktori. Hal ini perlu diperhatikan terutama pada server berbasis Unix Like (contoh GNU/Linux, dll), semisal keperluan modifikasi/konfigurasi/ubah file harus menggunakan root atau sudo.
 
-3. Setelah itu pada direktori utama web server Anda akan terbentuk direktori kg, sehingga apabila dipanggil di browser maka akan meggunakan alamat http://localhost/kg. Silahkan rename nama direktori tersebut dengan nama yang diinginkan
+*3. Setelah itu pada direktori utama web server Anda akan terbentuk direktori kg, sehingga apabila dipanggil di browser maka akan meggunakan alamat http://localhost/kg. Silahkan rename nama direktori tersebut dengan nama yang diinginkan.*
 
-4. Buat database pada MySQL, dengan nama kg (atau nama lain sesuai keinginan Anda)
+*4. Buat database pada MySQL, dengan nama kg (atau nama lain sesuai keinginan Anda).*
 
-Anda bisa menggunakan PHPMyAdmin atau jika ingin menggunakan perintah di terminal/command line bisa menggunakan;
+Anda bisa menggunakan [http://www.phpmyadmin.net/ PHPMyAdmin] atau jika ingin menggunakan perintah di terminal/command line bisa menggunakan;
 
 {{{
 mysqladmin -u root -p create kg
 }}}
 
-5. Kemudian import struktur dan data dariKG-20100512-1.sql (dalam folder /kg/db/) ke database yang telah kita buat sebelumnya
+*5. Kemudian import struktur dan data dariKG-20100512-1.sql (dalam folder /kg/db/) ke database yang telah kita buat sebelumnya.*
 
 Anda bisa menggunakan PHPMyadmin atau jika ingin menggunakan perintah di terminal/command line bisa menggunakan;
 
@@ -35,7 +35,7 @@ Anda bisa menggunakan PHPMyadmin atau jika ingin menggunakan perintah di termina
 mysql -u root -p kg < KG-20100512-1.sql
 }}}
 
-6. Lakukan konfigurasi pada file config.php (../kg/application/config/config.php)
+*6. Lakukan konfigurasi pada file config.php (../kg/application/config/config.php).*
 
 Caranya buka file config.php dan cari baris;
 
@@ -49,7 +49,7 @@ Kemudian silahkan ganti http://localhost/kg/ dengan URL standar yang benar, dima
 $config['base_url']     = "http://192.168.1.100/kg/";
 }}}
 
-7. Konfigurasi selanjutnya adalah pada file database.php (../kg/application/config/db.php)
+*7. Konfigurasi selanjutnya adalah pada file database.php (../kg/application/config/db.php).*
 
 Caranya buka file database.php dan cari baris;
 
@@ -64,7 +64,7 @@ Kemudian silahkan ganti 4 baris konfigurasi diatas sesuai dengan konfigurasi MyS
 
 Catatan: Untuk keamanan harap ganti username dan/atau password MySQL Anda, khususnya password jangan menggunakan default kosong.
 
-8. Setelah semua langkah diatas dilakukan, seharusnya aplikasi Keuangan Guyub sudah bisa digunakan. Silahkan buka browser Anda dan buka alamat Keuangan Guyub sesuai konfigurasi yang Anda pilih.
+*8. Setelah semua langkah diatas dilakukan, seharusnya aplikasi Keuangan Guyub sudah bisa digunakan. Silahkan buka browser Anda dan buka alamat Keuangan Guyub sesuai konfigurasi yang Anda pilih.*
 
 = Klien =
 
