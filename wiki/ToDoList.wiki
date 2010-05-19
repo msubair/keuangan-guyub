@@ -1,19 +1,20 @@
-#labels todolist,kontributor,progress,pic
+#ToDoList
+
 #Daftar Pekerjaan dan Rencana Pekerjaan
 
 || *No* || *Nama Pekerjaan* || *PIC (email)* || *Progress* || *Keterangan* ||
-|| 1 || Laporan Arus Kas || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
-|| 2 || Input Logo Perusahaan untuk laporan || 	- || - || - ||
+|| Laporan Arus Kas || Tim Guyub || (keuangan@guyub.co.id) || 10% || - ||
+|| 2 || Input Logo Perusahaan untuk laporan || - || - || - ||
 || 3 || Pilihan format laporan CSV, selain PDF || - || - || - ||
-|| 4 || Perbaikan sistem menu dan manajemen login dan hak akses pengguna || - || - || - ||
+|| 4 || Perbaikan sistem menu dan manajemen login pengguna || -	|| - || - ||
 || 5 || Grafik Laba Rugi Bulanan dengan Open Flash Chart pada Home || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
-|| 6 || Laporan Perubahan Modal || Tim Guyub (keuangan@guyub.co.id) || 10% || - || 
+|| 6 || Laporan Perubahan Modal || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
 || 7 || Perhitungan dan laporan pajak tahunan || Tim Guyub (keuangan@guyub.co.id) || - || - ||
-|| 8 || Dokumentasi Petunjuk Pengguna versi KG-20100512-1  || Tim Guyub (keuangan@guyub.co.id) || 100% || Sudah dirilis untuk versi, walau masih perlu diperbaiki beberapa typo  ||
-|| 9 || Lebih merapikan css dan js yang digunakan (termasuk membuang yang tidak perlu)  || Tim Guyub (keuangan@guyub.co.id) || 20% || - ||
+|| 8 || Dokumentasi Petunjuk Pengguna || Tim Guyub (keuangan@guyub.co.id) || 30% || - ||
+|| 9 || Lebih merapikan css dan js yang digunakan (termasuk membuang yang tidak perlu)	 || Tim Guyub (keuangan@guyub.co.id) || 20% || - ||
 
-Untuk tata cara berkontribusi bisa dilihat di bagian CaraBerkontribusi.
+Untuk tata cara berkontribusi bisa dilihat di bagian [http://code.google.com/p/keuangan-guyub/wiki/CaraBerkontribusi CaraBerkontribusi].
 
-Fyi, melihat progress dari fitur yang sedang dalam progress bisa dilihat pada DaftarFitur.
+Fyi, melihat progress dari fitur yang sedang dalam progress bisa dilihat pada [http://code.google.com/p/keuangan-guyub/wiki/ToDoList ToDoList], sedangkan detail log perubahan bisa dilihat [http://code.google.com/p/keuangan-guyub/wiki/ChangeLog ChangeLog].
 
-Apabila ada yang ingin ditanyakan atau Anda ingin menjadi kontributor, silahkan tuliskan pada kolom komentar di bawah ini
+Apabila ada yang ingin ditanyakan atau Anda ingin menjadi kontributor, silahkan tuliskan pada kolom komentar di bawah ini;
