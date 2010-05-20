@@ -10,6 +10,8 @@ Jadi semisal Anda menemukan versi dari Keuangan Guyub dengan nama *{{{KeuanganGu
 = Jadwal Rilis =
 Keuangan Guyub tidak akan mempunyai jadwal rilis teratur, akan tetapi di awal rilis sampai mencapai versi yang stabil dan memenuhi [DaftarFitur semua daftar fitur yang diharapkan Keuangan Guyub akan rilis paling lambat setiap 3 bulan.
 
+Diantara rilis resmi, komunitas dapat checkout/mengambil code aplikasi terkahir melalui [http://code.google.com/p/keuangan-guyub/source/checkout SVN Keuangan Guyub di Google Code}.
+
 = Dokumentasi Pengguna =
 
 Setiap rilis Keuangan Guyub akan disertai dengan rilis dokumentasi pengguna (PDF). Nama standar file dari dokumentasi pengguna adalah; *{{{DokumentasiPengguna-(versi rilis aplikasi)}}}*. Jika ada revisi penting pada dokumentasi tersebut dan diterbitkan dokumentasi baru untuk sebuah rilis aplikasi, maka namanya akan berubah menjadi *{{{DokumentasiPengguna-(versi rilis aplikasi)-revisi-(nomor revisi)}}}*.
