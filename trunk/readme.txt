@@ -1,5 +1,5 @@
 Petunjuk instalasi http://code.google.com/p/keuangan-guyub/wiki/PanduanSingkatInstalasi
-Dokumentasi Pengguna http://keuangan-guyub.googlecode.com/files/DokumentasiPengguna-KG-20100512-1.pdf
+Dokumentasi Pengguna http://keuangan-guyub.googlecode.com/files/DokumentasiPengguna-KG-20100512-1-revisi-1.pdf
 Project Hosting http://code.google.com/p/keuangan-guyub
 Wiki http://code.google.com/p/keuangan-guyub/w/list
 Blog http://keuangan.guyub.co.id/
