@@ -30,8 +30,11 @@
 			<td>
 				<?php 
 					$data['name'] = $data['id'] = 'nama';
+					// added by Adhe on 19.05.2010
+					$data['maxlength'] = '30';
+					// end
 					$data['value'] = (set_value('nama')) ? set_value('nama') : $account_data['nama'];
-					$data['title'] = "Nama Akun tidak boleh kosong";
+					$data['title'] = "Nama Akun tidak boleh kosong dan harus diisi dengan maksimal 30 karakter";
 					echo form_input($data);
 				?>
 			</td>
@@ -41,8 +44,11 @@
 			<td>
 				<?php 
 					$data['name'] = $data['id'] = 'kode';
+					// added by Adhe on 19.05.2010
+					$data['maxlength'] = '5';
+					// end
 					$data['value'] = (set_value('kode')) ? set_value('kode') : $account_data['kode'];
-					$data['title'] = "Kode Akun tidak boleh kosong dan harus diisi dengan angka";					
+					$data['title'] = "Kode Akun tidak boleh kosong dan harus diisi dengan maksimal 5 angka";					
 					echo form_input($data);
 				?>													
 			</td>
@@ -78,6 +84,7 @@
 					$data['name'] = $data['id'] = 'keterangan';
 					$data['value'] = (set_value('keterangan')) ? set_value('keterangan') : $account_data['keterangan'];
 					unset($data['title']);
+					unset($data['maxlength']);
 					echo form_textarea($data);
 				?>													
 			</td>
