@@ -56,7 +56,10 @@ class Jurnal_proyek extends Controller {
 	{
 		$data['title'] = "Tambah Jurnal Proyek";
 		$data['main_content'] = 'jurnal_proyek/form';
-		$data['accounts'] = $this->akun_model->get_data_for_dropdown();
+		// edited by Adhe on 19.05.2010
+		$accounts = $this->akun_model->get_data_for_dropdown();
+		$data['accounts'] = ($accounts) ? $accounts : array('-- Belum ada Akun --');
+		// end
 		$this->load->view('layout/template', $data);
 	}
 

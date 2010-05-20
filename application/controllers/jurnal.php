@@ -59,7 +59,10 @@ class Jurnal extends Controller {
 		$data['title'] = "Jurnal Umum";
 		$data['main_content'] = 'jurnal/form';
 		$data['f_id'] = 1;
-		$data['accounts'] = $this->akun_model->get_data_for_dropdown();
+		// edited by Adhe on 19.05.2010
+		$accounts = $this->akun_model->get_data_for_dropdown();
+		$data['accounts'] = ($accounts) ? $accounts : array('-- Belum ada Akun --');
+		// end
 		$this->load->view('layout/template', $data);
 	}
 
@@ -68,7 +71,10 @@ class Jurnal extends Controller {
 		$data['title'] = "Jurnal Penyesuaian";
 		$data['main_content'] = 'jurnal/form';
 		$data['f_id'] = 2;
-		$data['accounts'] = $this->akun_model->get_data_for_dropdown();
+		// edited by Adhe on 19.05.2010
+		$accounts = $this->akun_model->get_data_for_dropdown();
+		$data['accounts'] = ($accounts) ? $accounts : array('-- Belum ada Akun --');
+		// end
 		$this->load->view('layout/template', $data);
 	}
 
