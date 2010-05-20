@@ -9,5 +9,6 @@ Mailing List http://groups.google.com/group/keuangan-guyub
 Lisensi Keuangan Guyub gpl-3.0.txt
 Lisensi CodeIgniter ci-license.txt
 
+
 --
 Guyub http://guyub.co.id
