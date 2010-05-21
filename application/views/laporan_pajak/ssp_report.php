@@ -2,6 +2,7 @@
 
 	$npwp = $wajib_pajak_data['npwp'];
 	$nama = $wajib_pajak_data['nama'];
+	$nama_pemilik = $wajib_pajak_data['pemilik'];
 	$alamat = $wajib_pajak_data['alamat'];
 	$kota = $wajib_pajak_data['kota'];
 	$bulan = $laporan_data['bulan'];
@@ -360,7 +361,7 @@ $this->fpdf->SetFont('Times','B',12);
 $this->fpdf->Cell(2.5,0.7,'Nama Jelas','L',0,'C');
 $this->fpdf->Cell(0.2,0.7,':',0,0,'C');
 $this->fpdf->SetFont('Times','',12);
-$this->fpdf->Cell(6.75,0.7,"$nama",0,0,'L');
+$this->fpdf->Cell(6.75,0.7,"$nama_pemilik",0,0,'L');
 $this->fpdf->Cell(0.05,0.7,"",'TLBR',0,'C',1);
 
 $this->fpdf->Ln();
@@ -738,7 +739,7 @@ $this->fpdf->SetFont('Times','B',12);
 $this->fpdf->Cell(2.5,0.7,'Nama Jelas','L',0,'C');
 $this->fpdf->Cell(0.2,0.7,':',0,0,'C');
 $this->fpdf->SetFont('Times','',12);
-$this->fpdf->Cell(6.75,0.7,"$nama",0,0,'L');
+$this->fpdf->Cell(6.75,0.7,"$nama_pemilik",0,0,'L');
 $this->fpdf->Cell(0.05,0.7,"",'TLBR',0,'C',1);
 
 $this->fpdf->Ln();
@@ -1116,7 +1117,7 @@ $this->fpdf->SetFont('Times','B',12);
 $this->fpdf->Cell(2.5,0.7,'Nama Jelas','L',0,'C');
 $this->fpdf->Cell(0.2,0.7,':',0,0,'C');
 $this->fpdf->SetFont('Times','',12);
-$this->fpdf->Cell(6.75,0.7,"$nama",0,0,'L');
+$this->fpdf->Cell(6.75,0.7,"$nama_pemilik",0,0,'L');
 $this->fpdf->Cell(0.05,0.7,"",'TLBR',0,'C',1);
 
 $this->fpdf->Ln();
@@ -1494,7 +1495,7 @@ $this->fpdf->SetFont('Times','B',12);
 $this->fpdf->Cell(2.5,0.7,'Nama Jelas','L',0,'C');
 $this->fpdf->Cell(0.2,0.7,':',0,0,'C');
 $this->fpdf->SetFont('Times','',12);
-$this->fpdf->Cell(6.75,0.7,"$nama",0,0,'L');
+$this->fpdf->Cell(6.75,0.7,"$nama_pemilik",0,0,'L');
 $this->fpdf->Cell(0.05,0.7,"",'TLBR',0,'C',1);
 
 $this->fpdf->Ln();
@@ -1872,7 +1873,7 @@ $this->fpdf->SetFont('Times','B',12);
 $this->fpdf->Cell(2.5,0.7,'Nama Jelas','L',0,'C');
 $this->fpdf->Cell(0.2,0.7,':',0,0,'C');
 $this->fpdf->SetFont('Times','',12);
-$this->fpdf->Cell(6.75,0.7,"$nama",0,0,'L');
+$this->fpdf->Cell(6.75,0.7,"$nama_pemilik",0,0,'L');
 $this->fpdf->Cell(0.05,0.7,"",'TLBR',0,'C',1);
 
 $this->fpdf->Ln();
