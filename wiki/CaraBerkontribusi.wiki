@@ -24,7 +24,6 @@ Banyak sekali yang bisa dikontribusikan di Keuangan Guyub ini, semisal;
   # Mengerjakan permasalahan bugs.
   # Memberi usulan desain untuk aplikasi, web, dll.
   # Mendoakan yang baik-baik untuk proyek, kontributor dan komunitas Keuangan Guyub :).
-
   # dan ribuan lagi .. :)
 
 Sekedar petunjuk sederhana untuk kontribusi adalah pertama-tama bisa lihat-lihat dulu DaftarFitur, kemudian itu lihat ToDoList.
