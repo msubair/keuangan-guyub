@@ -23,51 +23,6 @@ Banyak sekali yang bisa dikontribusikan di Keuangan Guyub ini, semisal;
   # Mengerjakan fitur baru.
   # Mengerjakan permasalahan bugs.
   # Memberi usulan desain untuk aplikasi, web, dll.
-  # dan ribuan lagi .. :)
-
-Sekedar petunjuk sederhana untuk kontribusi adalah pertama-tama bisa lihat-lihat dulu DaftarFitur, kemudian itu lihat ToDoList.
-
--- 
-Muhammad Subair
-
-Reply
-		
-Forward
-		
-Reply by chat to muhammad
-		
-Reply
-|
-muhammad subair
- to Muhammad
-	
-show details 9:30 PM (11 hours ago)
-	
-- Hide quoted text -
-#Cara Berkontribusi di proyek Keuangan Guyub
-
-= Prosedur Kontribusi =
-
-Setelah rilis versi pertama maka akan menerima kontributor di luar Guyub, dengan kontrol rilis proyek Keuangan Guyub tetap dipegang dan dipelihara oleh Guyub. Metode kerjasama dengan kontributor diatur sederhana, dimana tahapannya adalah;
-  # Kontributor menghubungi PM dan sekaligus Owner Keuangan Guyub.
-  # Selanjutnya apabila diterima maka PM akan melakukan konfirmasi dan menuliskan informasinya setidaknya di ToDoList tentang pekerjaan tersebut (keterangan, PIC, dll) dan tetap memberi support yang dibutuhkan kontributor.
-  # Selama pengerjaan kontributor dianjurkan (tidak wajib) melakukan update progress.
-  # Setelah selesai kontributor melakukan konfirmasi dan memberikan hasil pekerjaannya kepada PM.
-  # Selanjutnya PM melakukan pemeriksaan dan penggabungan untuk selanjutnya dirilis pada versi berikutnya.
-
-Selain itu, semua koordinasi tim juga akan diusahakan terbuka dan dilakukan di media [http://code.google.com/p/keuangan-guyub/ Google Code], [http://groups.google.com/group/keuangan-guyub mailing list], dll.   
-
-= Kontribusi Apa? =
-
-Banyak sekali yang bisa dikontribusikan di Keuangan Guyub ini, semisal;
-  # Memberi masukan fitur yang sesuai untuk UKM jasa
-  # Memberi laporan issue bugs, melalui blog, mailing list, dll atau langsung ke [http://code.google.com/p/keuangan-guyub/issues/list Issues di Google Code].
-  # Memberi koreksi, masukan, usulan, kritikan untuk code atau struktur database.
-  # Membuat dokumentasi, mengoreksi typo dokumentasi, membuat contoh kasus untuk dokumentasi, dll.
-  # Mempromosikan kepada teman, saudara, umum dll, baik secara langsung melalui facebook, twitter atau blog, dll.
-  # Mengerjakan fitur baru.
-  # Mengerjakan permasalahan bugs.
-  # Memberi usulan desain untuk aplikasi, web, dll.
   # Mendoakan yang baik-baik untuk proyek, kontributor dan komunitas Keuangan Guyub :).
 
   # dan ribuan lagi .. :)
