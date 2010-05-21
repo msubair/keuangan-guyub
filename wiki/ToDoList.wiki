@@ -11,6 +11,9 @@
 || 7 || Perhitungan dan laporan pajak tahunan || Tim Guyub (keuangan@guyub.co.id) || - || - ||
 || 8 || Dokumentasi Petunjuk Pengguna versi KG-20100512-1 || Tim Guyub (keuangan@guyub.co.id) || 100% || Sudah dirilis, tapi masih banyak typo ||
 || 9 || Lebih merapikan css dan js yang digunakan (termasuk membuang yang tidak perlu)	 || Tim Guyub (keuangan@guyub.co.id) || 20% || - ||
+|| 10 || Membuat alternatif themes untuk aplikasi || Sugeng Doyle || - || - ||
+
+- = Tidak/belum diketahui
 
 Untuk tata cara berkontribusi bisa dilihat di bagian [http://code.google.com/p/keuangan-guyub/wiki/CaraBerkontribusi CaraBerkontribusi].
 
