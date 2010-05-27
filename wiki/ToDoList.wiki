@@ -5,7 +5,7 @@
 || 1 || Laporan Arus Kas || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
 || 2 || Input Logo Perusahaan untuk laporan || - || - || - ||
 || 3 || Pilihan format laporan CSV, selain PDF || - || - || - ||
-|| 4 || Perbaikan sistem menu dan manajemen login pengguna || -	|| - || - ||
+|| 4 || Perbaikan sistem menu dan manajemen login pengguna (ACL) || Adesanto Asman (adesantoasman@gmail.com) || - || - ||
 || 5 || Grafik Laba Rugi Bulanan dengan Open Flash Chart pada Home || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
 || 6 || Laporan Perubahan Modal || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
 || 7 || Perhitungan dan laporan pajak tahunan || Tim Guyub (keuangan@guyub.co.id) || - || - ||
