@@ -10,7 +10,7 @@ Jadi semisal Anda menemukan versi dari Keuangan Guyub dengan nama *{{{KeuanganGu
 = Jadwal Rilis =
 Keuangan Guyub tidak akan mempunyai jadwal rilis teratur, akan tetapi di awal rilis sampai mencapai versi yang stabil dan memenuhi [DaftarFitur semua daftar fitur yang diharapkan Keuangan Guyub akan rilis paling lambat setiap 3 bulan.
 
-Diantara rilis resmi, komunitas dapat checkout/mengambil code aplikasi terkahir melalui [http://code.google.com/p/keuangan-guyub/source/checkout SVN Keuangan Guyub di Google Code}.
+Diantara rilis resmi, komunitas dapat checkout/mengambil code aplikasi terkahir melalui [http://code.google.com/p/keuangan-guyub/source/checkout SVN Keuangan Guyub di Google Code].
 
 = Dokumentasi Pengguna =
 
