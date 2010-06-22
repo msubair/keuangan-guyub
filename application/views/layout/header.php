@@ -7,6 +7,8 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
+	
+	<base href="<?= $this->config->item('base_url') ?>" />
 
 	<style type="text/css" title="currentStyle">
 			@import "<?php echo base_url();?>css/style.css";
@@ -27,6 +29,7 @@
 		<script type="text/javascript" src="<?php echo base_url();?>js/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>js/additional-methods.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>js/jquery-ui-1.8rc3.custom.min.js"></script>
+		<script type="text/javascript" src="<?php echo base_url();?>js/swfobject.js"></script>
 		<script type="text/javascript">
 		$(function() {
 			$("#datepicker").datepicker({
