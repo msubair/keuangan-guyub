@@ -63,6 +63,31 @@ class Jurnal_model extends Model {
 		}
 	}
 
+	function get_laba_rugi_data()
+	{
+		$this->db->select('MONTH(jurnal.tgl) AS month, YEAR(jurnal.tgl) AS year, kelompok_akun.id AS kelompok_akun, jurnal_detail.debit_kredit, SUM(jurnal_detail.nilai) AS nilai');
+		$this->db->from('jurnal');
+		$this->db->join('jurnal_detail', 'jurnal_detail.jurnal_id=jurnal.id AND jurnal.f_id != 3', 'INNER');
+		$this->db->join('akun', 'jurnal_detail.akun_id=akun.id', 'INNER');
+		$this->db->join('kelompok_akun', 'akun.kelompok_akun_id = kelompok_akun.id', 'INNER');
+		$this->db->where_in('kelompok_akun.id', array( 4, 5 ) );
+		$this->db->where('extract(year_month from jurnal.tgl) > extract(year_month from (date_sub(curdate(), interval 1 year)))');		
+		$this->db->group_by(array('MONTH(jurnal.tgl)', 'YEAR(jurnal.tgl)', 'kelompok_akun.id', 'jurnal_detail.debit_kredit'));
+		$query = $this->db->get();
+		if ($query->num_rows() > 0)
+		{
+			foreach ($query->result() as $row)
+			{
+				$result[$row->month][$row->year][$row->kelompok_akun][$row->debit_kredit] = $row->nilai;
+			}
+			return $result;
+		}
+		else
+		{
+			return FALSE;
+		}
+	}
+
 	function fill_data()
 	{
 		$this->data = array(

@@ -5,7 +5,19 @@
 <div class="post-body">
 	<p>&nbsp;</p>
 	<p>Keuangan Guyub adalah sistem informasi terpadu yang diperuntukkan dan dirancang khusus untuk Usaha Kecil Menengah (UKM) yang bergerak di bidang jasa. Standar keuangan yang digunakan baik untuk akuntansi dan pajak mengacu pada standar yang berlaku di Indonesia.</p>
-	<p>Lisensi Keuangan Guyub adalah <a href="http://www.gnu.org/licenses/gpl.html">GPL v3</a>, lisensi yang memberi jaminan kebebasan untuk dijalankan, bebas dipelajari, bebas disalin, dan  bebas dikembangkan.</p>
-	<p>Beberapa informasi lebih terperinci bisa dilihat di <a href="http://code.google.com/p/keuangan-guyub/w/list">Wiki Keuangan Guyub</a>.</p>
+	<p>&nbsp;</p>
+	
+	<script type="text/javascript">
+            swfobject.embedSWF(
+              "swf/open-flash-chart.swf", "grafik_laba_rugi",
+              "<?= $chart_width ?>", "<?= $chart_height ?>",
+              "9.0.0", "expressInstall.swf",
+              {"data-file":"<?= urlencode($data_url) ?>"}
+            );
+    </script>
+	
+	<h3>Grafik Laba Rugi Bulanan</h3>
+	<p>&nbsp;</p>
+	<div id="grafik_laba_rugi"></div>
 
 </div>
