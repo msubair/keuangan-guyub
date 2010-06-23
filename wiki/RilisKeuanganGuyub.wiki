@@ -8,7 +8,7 @@ Standarnya rilis Keuangan Guyub menggunakan standar *{{{KeuanganGuyub-(tahun)(bu
 Jadi semisal Anda menemukan versi dari Keuangan Guyub dengan nama *{{{KeuanganGuyub-20100804-3}}}* maka itu artinya adalah versi yang dirilis pada tanggal 4 Agustus 2010 dan merupakan rilis resmi ketiga.
 
 = Jadwal Rilis =
-Keuangan Guyub tidak akan mempunyai jadwal rilis teratur, akan tetapi di awal rilis sampai mencapai versi yang stabil dan memenuhi [DaftarFitur semua daftar fitur yang diharapkan Keuangan Guyub akan rilis paling lambat setiap 3 bulan.
+Keuangan Guyub tidak akan mempunyai jadwal rilis teratur, akan tetapi di awal rilis sampai mencapai versi yang stabil baik dari sisi fitur dan sisi validitas yang benar-benar teruji, Keuangan Guyub akan rilis resmi setiap 3 bulan.
 
 Diantara rilis resmi, komunitas dapat checkout/mengambil code aplikasi terkahir melalui [http://code.google.com/p/keuangan-guyub/source/checkout SVN Keuangan Guyub di Google Code].
 
