@@ -6,7 +6,7 @@
 || 2 || Input Logo Perusahaan untuk laporan || - || - || - ||
 || 3 || Pilihan format laporan CSV, selain PDF || - || - || - ||
 || 4 || Perbaikan sistem menu dan manajemen login pengguna (ACL) || Adesanto Asman (adesantoasman@gmail.com) || - || - ||
-|| 5 || Grafik Laba Rugi Bulanan dengan Open Flash Chart pada Home || Tim Guyub (keuangan@guyub.co.id) || 100% || - ||
+|| 5 || Grafik Laba Rugi Bulanan dengan Open Flash Chart pada Home || Tim Guyub (keuangan@guyub.co.id) || 100% || Done sudah ada di SVN sejak revisi ke 43 dan di rilis ke-2 yang akan datang ||
 || 6 || Laporan Perubahan Modal || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
 || 7 || Perhitungan dan laporan pajak tahunan || Tim Guyub (keuangan@guyub.co.id) || - || - ||
 || 8 || Dokumentasi Petunjuk Pengguna versi KG-20100512-1 || Tim Guyub (keuangan@guyub.co.id) || 100% || Sudah dirilis, tapi masih banyak typo ||
