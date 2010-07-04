@@ -54,7 +54,7 @@
 
 			<div class="left navigation" id="main-nav">
 
-				<p><a href="http://code.google.com/p/keuangan-guyub/">Aplikasi F/OSS untuk Keuangan UKM Jasa</a></p>
+				<p><a href="http://code.google.com/p/keuangan-guyub/">Aplikasi Keuangan Open Source untuk UKM Jasa</a></p>
 
 			</div>
 
