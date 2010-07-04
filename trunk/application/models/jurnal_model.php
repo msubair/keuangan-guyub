@@ -17,7 +17,8 @@ class Jurnal_model extends Model {
 
 	function set_month_year($month, $year)
 	{
-		$this->db->like('tgl', $year.'-'.$month, 'after');
+		if($month !== '0') $this->db->where('MONTH(jurnal.tgl)', $month);
+		if($year !== '0') $this->db->where('YEAR(jurnal.tgl)', $year);
 	}
 
 	function set_account_id($akun_id)

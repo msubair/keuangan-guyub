@@ -266,8 +266,8 @@ class Jurnal extends Controller {
 
 	function _search_jurnal()
 	{
-		$month = ($this->input->post('bulan')) ? $this->input->post('bulan') : date("m");
-		$year = ($this->input->post('tahun')) ? $this->input->post('tahun') : date("Y");
+		$month = ($this->input->post('bulan') !== FALSE) ? $this->input->post('bulan') : date("m");
+		$year = ($this->input->post('tahun') !== FALSE) ? $this->input->post('tahun') : date("Y");
 		$this->jurnal_model->set_month_year($month, $year);
 		return $this->jurnal_model->get_data();
 	}
