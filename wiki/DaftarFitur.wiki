@@ -1,39 +1,44 @@
 #labels fitur,fasilitas,kelebihan,keunggulan
 # Daftar Fitur Keuangan GUyub
 
-= Fitur-fitur yang telah ada sampai versi terakhir (KG-20100512-1) =
-
 == Fitur Home/Dashboard ==
-  # Grafik Laba Rugi Bulanan (Baru tersedia di SVN)
+|| *No* || *Nama Fitur* || *Keterangan* ||
+|| 1 || Grafik Laba Rugi Bulanan || Sudah tersedia di SVN dan akan dimasukkan dalam rilis kedua ||
 
 == Fitur Akuntansi ==
-  # Buku Besar
-  # Jurnal
-  # Input Jurnal Umum
-  # Input Jurnal Penyesuaian
-  # Input Jurnal Penutup
-  # Input Jurnal Koreksi
+|| *No* || *Nama Fitur* || *Keterangan* ||
+|| 1 || Buku Besar || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 2 || Jurnal || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 3 || Input Jurnal Umum || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 4 || Input Jurnal Penyesuaian || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 5 || Input Jurnal Penutup || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 6 || Input Jurnal Koreksi || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
 
 == Fitur Manajemen Aplikasi ==
-  # Manajemen Pengguna
-  # Manajemen Data Perusahaan Wajib Pajak
-  # Manajemen Akun
+|| *No* || *Nama Fitur* || *Keterangan* ||
+|| 1 || Manajemen Pengguna || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 2 || Manajemen Data Perusahaan Wajib Pajak || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 3 || Manajemen Akun || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 4 || Saldo Awal || Akan dimasukkan di rilis kedua ||
 	
 == Fitur Manajemen Proyek ==
-  # Klien
-  # Proyek
-  # Jurnal Proyek
-	
+|| *No* || *Nama Fitur* || *Keterangan* ||
+|| 1 || Manajemen Klien || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 2 || Manajemen Proyek || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 3 || Input Jurnal Proyek || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 4 || Laporan Laba Rugi Proyek (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+
 == Fitur Laporan Keuangan ==
-  # Laporan Laba Rugi (PDF)
-  # Laporan Neraca Saldo Sebelum Penyesuaian (PDF)
-  # Laporan Neraca Saldo Setelah Penyesuaian (PDF)
-  # Neraca Saldo Setelah Penutupan (PDF)
-  # Laporan Laba Rugi Proyek (PDF)
+|| *No* || *Nama Fitur* || *Keterangan* ||
+|| 1 || Laporan Laba Rugi (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 2 || Laporan Neraca Saldo Sebelum Penyesuaian (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan akan dihilangkan pada rilis kedua ||
+|| 3 || Laporan Neraca Saldo Setelah Penyesuaian (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan akan dihilangkan pada rilis kedua ||
+|| 4 || Laporan Neraca Saldo Setelah Penutupan (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan akan berganti nama menjadi Laporan Neraca saja pada rilis kedua||
 	
 == Fitur Laporan Pajak ==
-  # Laporan Pajak PPh 21 (PDF)
-  # Laporan SSP -Surat Setoran Pajak (PDF)
+|| *No* || *Nama Fitur* || *Keterangan* ||
+|| 1 || Laporan Pajak PPh 21 (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 2 || Laporan SSP -Surat Setoran Pajak (PDF) || Sudah tersedia sejak rilis ||
 	
 == Sedangkan kelebihan khusus yang merupakan fitur penunjang lainnya adalah;==
   # Dirancang dan dikhususkan untuk keuangan UKM jasa, sehingga aplikasi bisa dirancang lebih mudah, sederhana dan memenuhi kebutuhan unik UKM jasa.
