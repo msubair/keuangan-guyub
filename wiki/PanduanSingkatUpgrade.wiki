@@ -13,7 +13,7 @@ mysqldump -u root -p create kg > ../kg-old.sql
 
 *2. Copy dan replace seluruh file aplikasi versi baru menggantikan aplikasi versi lama yang telah ada di webserver.*
 
-*3. Eksekusi file query upgrade (KG-Upgrade-[versi sebelumnya]-to-[versi sekarang].sql)yang disertakan pada rilis baru yang terletak pada folder db (misal /kg/db/KG-Upgrade-1-to-2.sql).*
+*3. Eksekusi file query upgrade {{{(KG-Upgrade-(versi sebelumnya)-to-(versi sekarang].sql))}}}yang disertakan pada rilis baru yang terletak pada folder db (misal /kg/db/KG-Upgrade-1-to-2.sql).*
 
 Anda bisa menggunakan fitur Import di [http://www.phpmyadmin.net/ PHPMyAdmin], atau jika ingin menggunakan perintah di terminal/command line bisa menggunakan;
 
