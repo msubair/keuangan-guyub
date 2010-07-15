@@ -66,6 +66,8 @@ Catatan: Untuk keamanan harap ganti username dan/atau password MySQL Anda, khusu
 
 *8. Setelah semua langkah diatas dilakukan, seharusnya aplikasi Keuangan Guyub sudah bisa digunakan. Silahkan buka browser Anda dan buka alamat Keuangan Guyub sesuai konfigurasi yang Anda pilih.*
 
+Catatan: Untuk pertama kali Administrator aplikasi dapat login dengan menggunakan username = admin dan password = 4dm1n.
+
 = Klien =
 
 Karena aplikasi Keuangan Guyub berbasis web maka pada klien yang akan digunakan untuk menjalanakan aplikasi Keuangan Guyub tidak perlu melakukan instalasi khusus, cukup dengan memastikan browser yang digunakan bisa menjalankan dengan normal website dengan javascript dan AJAX.
