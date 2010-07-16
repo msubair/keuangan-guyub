@@ -335,7 +335,7 @@ CREATE TABLE `login` (
 
 LOCK TABLES `login` WRITE;
 /*!40000 ALTER TABLE `login` DISABLE KEYS */;
-INSERT INTO `login` VALUES (1,'Muhammad','Subair','1','c4ca4238a0b923820dcc509a6f75849b',1,0),(2,'Keuangan','Guyub','admin','21232f297a57a5a743894a0e4a801fc3',1,0),(3,'Keuangan','Guyub','admin','704b037a97fa9b25522b7c014c300f8a',1,1);
+INSERT INTO `login` VALUES (1,'Keuangan','Guyub','admin','704b037a97fa9b25522b7c014c300f8a',1,1);
 /*!40000 ALTER TABLE `login` ENABLE KEYS */;
 UNLOCK TABLES;
 
