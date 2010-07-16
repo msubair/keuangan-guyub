@@ -19,7 +19,36 @@
 		</thead>
 		<tbody>
 			<?php 
+				// Saldo Awal
 				$sum = 0;
+				if ($account_data['saldo_awal'] != 0)
+				{
+					$sum = $account_data['saldo_awal'];
+					if ($sum < 0)
+					{
+						$d = '';
+						$k = number_format(-$sum, 0, '', '.');
+						$dk = 'K';
+					}
+					else
+					{
+						$d = number_format($sum, 0, '', '.');
+						$k = '';
+						$dk = 'D';
+					}
+					echo '<tr>';
+					echo '<td></td>';
+					echo '<td>Saldo Awal</td>';
+					echo '<td></td>';
+					echo '<td>'.$d.'</td>';
+					echo '<td>'.$k.'</td>';	
+					echo '<td>'.$dk.'</td>';
+					echo '<td>'.number_format(abs($sum), 0, '', '.').'</td>';				
+					echo '</tr>';
+				}
+
+
+				
 				if($journal_data)
 				{
 					foreach ($journal_data as $row) 

@@ -149,7 +149,7 @@ class Proyek extends Controller {
 		$this->form_validation->set_rules('nama', 'Nama Proyek', 'trim|required');
 		$this->form_validation->set_rules('klien', 'Klien', 'trim|required');
 		$this->form_validation->set_rules('tanggal', 'Tanggal', 'trim|dateISO');
-		$this->form_validation->set_rules('biaya', 'Prekiraan Biaya', 'trim|integer');
+		$this->form_validation->set_rules('biaya', 'Perkiraan Biaya', 'trim|is_natural');
 		$this->form_validation->set_rules('from', 'Perkiraan Waktu', 'trim|dateISO');
 		$this->form_validation->set_rules('to', 'Perkiraan Waktu', 'trim|dateISO');
 	

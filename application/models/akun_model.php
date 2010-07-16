@@ -16,7 +16,7 @@ class Akun_model extends Model {
 
 	function get_all_data()
 	{
-		$this->db->select('akun.id, akun.nama, akun.kode, akun.saldo, akun.kelompok_akun_id, kelompok_akun.nama AS groups_name');
+		$this->db->select('akun.id, akun.nama, akun.kode, akun.saldo_awal, akun.saldo, akun.kelompok_akun_id, kelompok_akun.nama AS groups_name');
 		$this->db->from('akun');
 		$this->db->join('kelompok_akun', 'akun.kelompok_akun_id=kelompok_akun.id', 'INNER');
 		$query = $this->db->get();
@@ -136,6 +136,33 @@ class Akun_model extends Model {
 			return TRUE;
 		}
 	}	
+
+	function set_saldo_awal()
+	{
+		$id = $this->input->post('id');
+		$this->db->trans_start();
+		for ($i = 1; $i <= count($id); $i++)
+		{
+			$debit = $this->input->post('debit'.$i);
+			$kredit =$this->input->post('kredit'.$i);
+			if($debit)
+			{
+				$saldo_awal = $debit;
+			}
+			elseif($kredit)
+			{
+				$saldo_awal = -$kredit;
+			}
+			else
+			{
+				$saldo_awal = 0;
+			}
+			$this->db->where('id', $id[$i-1]);
+			$update = $this->db->update('akun', array('saldo_awal' => $saldo_awal) );
+		}
+		$this->db->trans_complete();	
+		return $this->db->trans_status();
+	}
 
 	function insert_data()
 	{

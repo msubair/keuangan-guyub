@@ -9,7 +9,7 @@ class Akun extends Controller {
 		$this->auth->check_user_authentification();
 		$this->load->model('akun_model');
 	}
-	
+
 	function index()
 	{
 		$this->auth->check_user_authentification(1);
@@ -40,7 +40,7 @@ class Akun extends Controller {
 		$data['account_data'] = $this->akun_model->get_data_by_id($id);
 		$data['account_groups'] = $this->akun_model->get_all_account_groups();
 		$this->load->view('layout/template', $data);
-	}	
+	}
 
 	function detail_akun()
 	{
@@ -49,7 +49,15 @@ class Akun extends Controller {
 		$data['account_data'] = $this->akun_model->get_all_data();
 		$this->load->view('layout/template', $data);
 	}
-	
+
+	function saldo_awal()
+	{
+		$data['title'] = "Saldo Awal";
+		$data['main_content'] = 'akun/saldo_awal';
+		$data['account_data'] = $this->akun_model->get_all_data();
+		$this->load->view('layout/template', $data);
+	}
+
 	function edit()
 	{
 		$id = $this->uri->segment(3);
@@ -69,9 +77,9 @@ class Akun extends Controller {
 		}
 		$data['account_data'] = $account_data;
 		$data['account_groups'] = $this->akun_model->get_all_account_groups();
-		$this->load->view('layout/template', $data);		
+		$this->load->view('layout/template', $data);
 	}
-	
+
 	function insert()
 	{
 		if (!$this->_akun_validation())
@@ -95,14 +103,14 @@ class Akun extends Controller {
 				$this->add();
 			}
 			//Insert Data
-			elseif($this->akun_model->insert_data()) 
+			elseif($this->akun_model->insert_data())
 			{
 				$this->session->set_userdata('SUCCESSMSG', 'Akun baru sukses ;)');
 				redirect('akun');
-			}			
+			}
 		}
 	}
-			
+
 	function update()
 	{
 		$id = $this->uri->segment(3);
@@ -119,7 +127,7 @@ class Akun extends Controller {
 			{
 				$this->session->set_userdata('ERRMSG_ARR', 'Nama Akun telah digunakan');
 				$this->edit();
-			}		
+			}
 			//Check for duplicate account code
 			elseif(!$this->akun_model->check_code($id))
 			{
@@ -130,7 +138,7 @@ class Akun extends Controller {
 			elseif($this->akun_model->update_data($id))
 			{
 				$this->session->set_userdata('SUCCESSMSG', 'Update Akun sukses ;)');
-				redirect('akun');		
+				redirect('akun');
 			}
 		}
 	}
@@ -156,6 +164,53 @@ class Akun extends Controller {
 		}
 		echo $msg;
 	}
+
+	function input_saldo_awal()
+	{
+		if (!$this->_saldo_awal_validation())
+		{
+			$this->session->set_userdata('ERRMSG_ARR', validation_errors());
+			$this->saldo_awal();
+		}
+		else
+		{
+			$error_message = $this->_check_sum();
+			if($error_message != '')
+			{
+				$this->session->set_userdata('ERRMSG_ARR', $error_message);
+				$this->saldo_awal();
+			}
+			else
+			{
+				//Update Saldo Awal
+				if($this->akun_model->set_saldo_awal())
+				{
+					$this->session->set_userdata('SUCCESSMSG', 'Input Saldo Awal sukses ;)');
+					redirect('akun/saldo_awal');
+				}
+			}
+		}
+	}
+
+	function _check_sum()
+	{
+		$error_message = '';
+		$debit_sum = 0;
+		$kredit_sum = 0;
+		$id = $this->input->post('id');
+		for ($i = 1; $i <= count($id); $i++)
+		{
+			$debit = $this->input->post('debit'.$i);
+			$kredit = $this->input->post('kredit'.$i);
+			$debit_sum += $debit;
+			$kredit_sum += $kredit;
+		}
+		if($debit_sum != $kredit_sum)
+		{
+			$error_message = "Jumlah debit harus sama dengan jumlah kredit.";
+		}
+		return $error_message;
+	}
 	
 	function _check_jurnal_exist($id)
 	{
@@ -176,7 +231,19 @@ class Akun extends Controller {
 	{
 		$this->form_validation->set_rules('nama', 'Nama Akun', 'trim|required');
 		$this->form_validation->set_rules('kode', 'Kode Akun', 'trim|required|numeric');
-	
+
+		return $this->form_validation->run();
+	}
+
+	function _saldo_awal_validation()
+	{
+		$id = $this->input->post('id');
+		for ($i = 1; $i <= count($id); $i++)
+		{
+			$this->form_validation->set_rules('debit'.$i, 'Debit', 'trim|is_natural');
+			$this->form_validation->set_rules('kredit'.$i, 'Kredit', 'trim|is_natural');
+		}
+
 		return $this->form_validation->run();
 	}
 

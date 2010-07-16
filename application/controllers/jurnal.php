@@ -281,8 +281,8 @@ class Jurnal extends Controller {
 		$akun = $this->input->post('akun');
 		for ($i = 1; $i <= count($akun); $i++)
 		{
-			$this->form_validation->set_rules('debit'.$i, 'Debit', 'trim|integer');
-			$this->form_validation->set_rules('kredit'.$i, 'Kredit', 'trim|integer');
+			$this->form_validation->set_rules('debit'.$i, 'Debit', 'trim|is_natural');
+			$this->form_validation->set_rules('kredit'.$i, 'Kredit', 'trim|is_natural');
 		}
 
 		return $this->form_validation->run();

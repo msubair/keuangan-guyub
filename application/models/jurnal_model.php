@@ -15,10 +15,21 @@ class Jurnal_model extends Model {
 		$this->db->where('jurnal.id', $id);
 	}
 
-	function set_month_year($month, $year)
+	function set_month_year($month, $year, $sign = '=')
 	{
-		if($month !== '0') $this->db->where('MONTH(jurnal.tgl)', $month);
-		if($year !== '0') $this->db->where('YEAR(jurnal.tgl)', $year);
+		$unit = '';
+		$val = '';
+		if($year !== '0')
+		{
+			$unit = 'YEAR';
+			$val = $year;
+		} 
+		if($month !== '0')
+		{
+			$unit = ($unit) ? $unit.'_MONTH' : 'MONTH';
+			$val .= $month;
+ 		}
+ 		if($unit) $this->db->where("EXTRACT($unit FROM tgl) $sign", $val);
 	}
 
 	function set_account_id($akun_id)
@@ -26,10 +37,16 @@ class Jurnal_model extends Model {
 		$this->db->where('jurnal_detail.akun_id', $akun_id);
 	}
 
-	function set_f($f)
+	function set_account_group_id($id)
+	{
+		$this->db->where_in('akun.kelompok_akun_id', $id);
+	}
+	
+/*	function set_f($f)
 	{
 		$this->db->where_in('jurnal.f_id', $f);
 	}
+*/
 
 	function set_project($kelompok_akun_id = 0, $proyek_id = '')
 	{
