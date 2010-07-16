@@ -21,7 +21,7 @@ class Laporan_keuangan extends Controller {
 		$data['title'] = "Laporan Keuangan";
 		$data['main_content'] = 'laporan_keuangan/form';
 		$data['months'] = bulan_list(1);
-		$data['years'] = tahun_list(1);
+		$data['years'] = tahun_list();
 		$this->load->view('layout/template', $data);
 	}	
 
@@ -34,7 +34,8 @@ class Laporan_keuangan extends Controller {
 		$data['laba_rugi_data'] = $this->_get_laba_rugi_data($bulan,$data['tahun']);
 		$this->load->view('laporan_keuangan/laba_rugi', $data);
 	}
-		
+
+/*		
 	function laporan_neraca_saldo_sebelum_penyesuaian()
 	{
 		$data['title'] = "LAPORAN NERACA SALDO SEBELUM PENYESUAIAN";
@@ -58,8 +59,10 @@ class Laporan_keuangan extends Controller {
 	}
 	
 	function laporan_neraca_saldo_setelah_penutupan()
+*/
+	function laporan_neraca()
 	{
-		$data['title'] = "LAPORAN NERACA SALDO SETELAH PENUTUPAN";
+		$data['title'] = "LAPORAN NERACA";
 		$data['wajib_pajak_data'] = $this->pajak_model->get_data();	
 		$bulan = $this->uri->segment(3);
 		$data['bulan'] = ($bulan) ? nama_bulan($bulan) : FALSE;
@@ -68,15 +71,11 @@ class Laporan_keuangan extends Controller {
 		$this->load->view('laporan_keuangan/neraca', $data);
 	}
 	
-	function _get_neraca_data($bulan, $tahun, $f = '')
+	function _get_neraca_data($bulan, $tahun)
 	{
-		if($f)
-		{
-			$this->jurnal_model->set_f($f);
-		}
-		$month = ($bulan) ? $bulan : '';
-		$year = ($tahun) ? $tahun : '%';
-		$this->jurnal_model->set_month_year($month, $year);
+//		if($f) $this->jurnal_model->set_f($f);
+		$this->jurnal_model->set_month_year($bulan, $tahun, '<=');
+		$this->jurnal_model->set_account_group_id(array(1,2,3));
 		$journal_data = $this->jurnal_model->get_data();
 
 		$this->akun_model->set_account_group_id(array(1,2,3));
@@ -86,7 +85,7 @@ class Laporan_keuangan extends Controller {
 		{
 			foreach ($akun as $row)
 			{
-				$result[$row->kelompok_akun_id][$row->id] = array('nama' => $row->nama, 'saldo' => 0);
+				$result[$row->kelompok_akun_id][$row->id] = array('nama' => $row->nama, 'saldo' => $row->saldo_awal);
 			}
 
 			if($journal_data)
@@ -117,9 +116,8 @@ class Laporan_keuangan extends Controller {
 
 	function _get_laba_rugi_data($bulan, $tahun)
 	{
-		$month = ($bulan) ? $bulan : '';
-		$year = ($tahun) ? $tahun : '%';
-		$this->jurnal_model->set_month_year($month, $year);
+		$this->jurnal_model->set_month_year($bulan, $tahun);
+		$this->jurnal_model->set_account_group_id(array(4,5));
 		$journal_data = $this->jurnal_model->get_data();
 
 		$this->akun_model->set_account_group_id(array(4,5));

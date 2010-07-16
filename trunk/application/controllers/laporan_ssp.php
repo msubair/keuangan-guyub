@@ -135,7 +135,7 @@ class Laporan_ssp extends Controller {
 		$this->form_validation->set_rules('map', 'MAP/Kode Jenis Pajak', 'trim|required|numeric');
 		$this->form_validation->set_rules('kode', 'Kode Jenis Setoran', 'trim|required|numeric');
 		$this->form_validation->set_rules('uraian', 'Uraian Pembayaran', 'trim|required');
-		$this->form_validation->set_rules('jumlah', 'Jumlah Pembayaran', 'trim|required|integer');
+		$this->form_validation->set_rules('jumlah', 'Jumlah Pembayaran', 'trim|required|is_natural');
 		$this->form_validation->set_rules('terbilang', 'Terbilang', 'trim|required');
 		
 		return $this->form_validation->run();

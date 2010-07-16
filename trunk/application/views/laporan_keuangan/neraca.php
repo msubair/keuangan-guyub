@@ -139,7 +139,7 @@ for($k=0; $k<=max($i,$j); $k++)
 
 	if(isset($content[1][$k][0]))
 	{
-		$this->fpdf->Cell(5.25,0.5,$content[1][$k][0],'L',0,'R');
+		$this->fpdf->Cell(5.25,0.5,$content[1][$k][0],'L',0,'L');
 		$this->fpdf->Cell(3.5,0.5,$content[1][$k][1],0,0,'R');
 		$this->fpdf->Cell(3.5,0.5,$content[1][$k][2],0,0,'R');
 	}

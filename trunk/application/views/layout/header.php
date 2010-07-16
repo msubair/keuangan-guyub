@@ -135,7 +135,7 @@
 
 		<div class="navigation" id="sub-nav">
 			<ul class="user-logout">
-				<li class="current-tab"><a href="#">Hi.. <?php echo $this->session->userdata('SESS_FIRST_NAME'); ?> ;) </a></li>
+				<li class="current-tab"><a href="<?php echo current_url(); ?>#">Hi.. <?php echo $this->session->userdata('SESS_FIRST_NAME'); ?> ;) </a></li>
 				<li><?php echo anchor('login/logout', 'Logout'); ?>  |</li>
 				<li><?php echo anchor('user/edit/'.$this->session->userdata('SESS_USER_ID'), 'Ubah Profil'); ?>  |</li>
 			</ul>

@@ -11,6 +11,7 @@
 					<li><?php echo anchor(site_url()."user", 'Pengguna &#187;', 'class="more"'); ?></li>
 					<li><?php echo anchor(site_url()."pajak", 'Data Wajib Pajak &#187;', 'class="more"'); ?></li>
 					<li><?php echo anchor(site_url()."akun", 'Akun &#187;', 'class="more"'); ?></li>												
+					<li><?php echo anchor(site_url()."akun/saldo_awal", 'Saldo Awal &#187;', 'class="more"'); ?></li>												
 				</ul>
 
 			</div>

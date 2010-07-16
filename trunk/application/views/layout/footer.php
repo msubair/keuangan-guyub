@@ -28,7 +28,7 @@
 
 		<div class="right" id="footer-right">
 
-			<p class="large"><a href="http://www.gnu.org/licenses/gpl.html">GPL</a> <span class="text-separator">|</span> <a href="http://keuangan.guyub.co.id/kredit/">Kredit</a> <span class="text-separator">|</span> <strong><a href="http://code.google.com/p/keuangan-guyub/issues/list">LaporBugs</a></strong> <span class="text-separator">|</span> <strong><a href="http://groups.google.com/group/keuangan-guyub">MailingList</a></strong> <span class="text-separator">|</span> <a href="http://keuangan.guyub.co.id">Blog</a> <span class="text-separator">|</span> <a href="http://www.facebook.com/pages/Keuangan-Guyub/122152827795291">Fb</a> <span class="text-separator">|</span> <a href="http://twitter.com/keuanganguyub">Tw</a> <span class="text-separator">|</span> <a href="#top" class="quiet">Top &uarr;</a></p>
+			<p class="large"><a href="http://www.gnu.org/licenses/gpl.html">GPL</a> <span class="text-separator">|</span> <a href="http://keuangan.guyub.co.id/kredit/">Kredit</a> <span class="text-separator">|</span> <strong><a href="http://code.google.com/p/keuangan-guyub/issues/list">LaporBugs</a></strong> <span class="text-separator">|</span> <strong><a href="http://groups.google.com/group/keuangan-guyub">MailingList</a></strong> <span class="text-separator">|</span> <a href="http://keuangan.guyub.co.id">Blog</a> <span class="text-separator">|</span> <a href="http://www.facebook.com/pages/Keuangan-Guyub/122152827795291">Fb</a> <span class="text-separator">|</span> <a href="http://twitter.com/keuanganguyub">Tw</a> <span class="text-separator">|</span> <a href="<?php echo current_url(); ?>#top" class="quiet">Top &uarr;</a></p>
 
 		</div>
 

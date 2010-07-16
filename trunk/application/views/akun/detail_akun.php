@@ -21,7 +21,7 @@
 						echo '<tr>';
 						echo '<td>'.$row->groups_name.'</td>';
 						echo '<td>'.$row->nama.'</td>';
-						echo '<td>'.number_format($row->saldo, 0, '', '.').'</td>';						
+						echo '<td>'.number_format(($row->saldo_awal+$row->saldo), 0, '', '.').'</td>';						
 						echo '<td>'.anchor(site_url()."jurnal/buku_besar/".$row->id, 'Buku Besar').'</td>'; 	
 						echo '</tr>';
 					}

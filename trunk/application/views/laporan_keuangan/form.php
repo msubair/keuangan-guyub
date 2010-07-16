@@ -38,13 +38,13 @@
 			<td>
 				<?php 
 					$data['id'] = 'jenis_laporan';
-					$selected = 'laporan_neraca_saldo_setelah_penutupan';
+					$selected = 'laporan_neraca';
 					$options = array( 'laporan_laba_rugi' => 'Laporan Laba Rugi',
 //								  	  'laporan_perubahan_modal' => 'Laporan Perubahan Modal',
 //								  	  'laporan_neraca' => 'Laporan Neraca',
-								  	  'laporan_neraca_saldo_sebelum_penyesuaian' => 'Laporan Neraca Saldo Sebelum Penyesuaian',
-								  	  'laporan_neraca_saldo_setelah_penyesuaian' => 'Laporan Neraca Saldo Setelah Penyesuaian',
-								  	  'laporan_neraca_saldo_setelah_penutupan' => 'Laporan Neraca Saldo Setelah Penutupan');
+//								  	  'laporan_neraca_saldo_sebelum_penyesuaian' => 'Laporan Neraca Saldo Sebelum Penyesuaian',
+//								  	  'laporan_neraca_saldo_setelah_penyesuaian' => 'Laporan Neraca Saldo Setelah Penyesuaian',
+								  	  'laporan_neraca' => 'Laporan Neraca');
 					echo form_dropdown('jenis_laporan', $options, $selected, $data);
 				?>					
 			</td>
