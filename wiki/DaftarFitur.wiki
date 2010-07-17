@@ -4,7 +4,7 @@
 == Fitur Home/Dashboard ==
 
 || *No* || *Nama Fitur* || *Keterangan* ||
-|| 1 || Grafik Laba Rugi Bulanan || Sudah tersedia di SVN dan akan dimasukkan dalam rilis kedua ||
+|| 1 || Grafik Laba Rugi Bulanan || Sudah tersedia sejak rilis kedua - KG-20100717-2 ||
 
 == Fitur Akuntansi ==
 
@@ -15,6 +15,7 @@
 || 4 || Input Jurnal Penyesuaian || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
 || 5 || Input Jurnal Penutup || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
 || 6 || Input Jurnal Koreksi || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
+|| 7 || Input Saldo Awal || Sudah tersedia sejak rilis kedua - KG-20100717-2 ||
 
 == Fitur Manajemen Aplikasi ==
 
@@ -36,8 +37,8 @@
 
 || *No* || *Nama Fitur* || *Keterangan* ||
 || 1 || Laporan Laba Rugi (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 ||
-|| 2 || Laporan Neraca Saldo Sebelum Penyesuaian (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan akan dihilangkan pada rilis kedua ||
-|| 3 || Laporan Neraca Saldo Setelah Penyesuaian (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan akan dihilangkan pada rilis kedua ||
+|| 2 || Laporan Neraca Saldo Sebelum Penyesuaian (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan dihilangkan pada rilis kedua ||
+|| 3 || Laporan Neraca Saldo Setelah Penyesuaian (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan dihilangkan pada rilis kedua ||
 || 4 || Laporan Neraca Saldo Setelah Penutupan (PDF) || Sudah tersedia sejak rilis pertama - KG-20100512-1 dan akan berganti nama menjadi Laporan Neraca saja pada rilis kedua ||
 
 == Fitur Laporan Pajak ==
