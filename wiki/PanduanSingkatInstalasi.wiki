@@ -29,7 +29,7 @@ mysqladmin -u root -p create kg
 
 *5. Kemudian import struktur dan data dariKG-20100512-1.sql (dalam folder /kg/db/) ke database yang telah kita buat sebelumnya.*
 
-Anda bisa menggunakan PHPMyadmin atau jika ingin menggunakan perintah di terminal/command line bisa menggunakan;
+Anda bisa menggunakan fitur Impor di PHPMyadmin atau jika ingin menggunakan perintah di terminal/command line bisa menggunakan;
 
 {{{
 mysql -u root -p kg < KG-20100512-1.sql
