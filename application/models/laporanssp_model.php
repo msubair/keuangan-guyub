@@ -44,8 +44,7 @@ class Laporanssp_model extends Model {
 			'jenis_pajak' => $this->input->post('map'),			
 			'kode_setoran' => $this->input->post('kode'),
 			'keterangan' => $this->input->post('uraian'),
-			'jumlah' => $this->input->post('jumlah'),
-			'terbilang' => $this->input->post('terbilang')
+			'jumlah' => $this->input->post('jumlah')
 		);
 	}
 	

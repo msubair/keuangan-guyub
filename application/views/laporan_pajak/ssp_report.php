@@ -10,8 +10,8 @@
 	$jenis_pajak = $laporan_data['jenis_pajak'];
 	$kode_setoran = $laporan_data['kode_setoran'];
 	$keterangan = $laporan_data['keterangan'];
-	$jumlah = $laporan_data['jumlah'];
-	$terbilang = $laporan_data['terbilang'];
+	$jumlah = number_format($laporan_data['jumlah'],0,",",".");
+	$terbilang = trim(to_words($laporan_data['jumlah']))." rupiah";
 	$sekarang = date("j").' '.nama_bulan(date("m")).' '.date("Y");
 
 $this->fpdf->SetMargins(1,1,1);

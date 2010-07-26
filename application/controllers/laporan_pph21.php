@@ -126,7 +126,7 @@ class Laporan_pph21 extends Controller {
 		}
 		else
 		{
-			$msg .= 'E#Terjadi kesalahan dalam menghapus data Laporan PPh 21 untuk bulan '.nama_bulan($laporanpph21_data['bulan']).' tahun '.$laporanpph21_data['tahun'].'. Harap coba lagi.';
+			$msg = 'E#Terjadi kesalahan dalam menghapus data Laporan PPh 21 untuk bulan '.nama_bulan($laporanpph21_data['bulan']).' tahun '.$laporanpph21_data['tahun'].'. Harap coba lagi.';
 		}
 		echo $msg;
 	}
