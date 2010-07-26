@@ -10,8 +10,9 @@ class Laporan_ssp extends Controller {
 		$this->load->model('pajak_model');
 		$this->load->model('laporanssp_model');
 		$this->load->helper('indodate');
+		$this->load->helper('finance');
 	}
-	
+
 	function index()
 	{
 		$data['title'] = "Display Laporan SSP";
@@ -69,7 +70,7 @@ class Laporan_ssp extends Controller {
 		{
 			$this->laporanssp_model->fill_data();
 			//Insert Data
-			if($this->laporanssp_model->insert_data()) 
+			if($this->laporanssp_model->insert_data())
 			{
 				$this->session->set_userdata('SUCCESSMSG', 'Laporan Pajak SSP baru sukses ;)');
 				redirect('laporan_ssp');
@@ -110,12 +111,13 @@ class Laporan_ssp extends Controller {
 			define('FPDF_FONTPATH',$this->config->item('fonts_path'));
 			$this->fpdf->FPDF("P","cm","letter");
 			$id = $this->uri->segment(3);
-			$data['wajib_pajak_data'] = $this->pajak_model->get_data();	
-			$data['laporan_data'] = $this->laporanssp_model->get_data_by_id($id);	
+			$data['wajib_pajak_data'] = $this->pajak_model->get_data();
+
+			$data['laporan_data'] = $this->laporanssp_model->get_data_by_id($id);
 			$this->load->view('laporan_pajak/ssp_report', $data);
 		}
-	}	
-	
+	}
+
 	function delete()
 	{
 		$id = $this->input->post('id');
@@ -125,19 +127,18 @@ class Laporan_ssp extends Controller {
 		}
 		else
 		{
-			$msg .= 'E#Terjadi kesalahan dalam menghapus data Laporan SSP yang Anda pilih. Harap coba lagi.';
+			$msg = 'E#Terjadi kesalahan dalam menghapus data Laporan SSP yang Anda pilih. Harap coba lagi.';
 		}
 		echo $msg;
 	}
 
 	function _laporanssp_validation()
-	{		
+	{
 		$this->form_validation->set_rules('map', 'MAP/Kode Jenis Pajak', 'trim|required|numeric');
 		$this->form_validation->set_rules('kode', 'Kode Jenis Setoran', 'trim|required|numeric');
 		$this->form_validation->set_rules('uraian', 'Uraian Pembayaran', 'trim|required');
 		$this->form_validation->set_rules('jumlah', 'Jumlah Pembayaran', 'trim|required|is_natural');
-		$this->form_validation->set_rules('terbilang', 'Terbilang', 'trim|required');
-		
+
 		return $this->form_validation->run();
 	}
 
