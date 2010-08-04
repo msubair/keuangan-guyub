@@ -3,7 +3,8 @@
 <div class="post-body">
 
 <?php
-	echo form_open('pajak/action', 'id="pajak_form"');
+	$attributes = array('id' => 'pajak_form');
+	echo form_open_multipart('pajak/action',$attributes);
 	
 	echo "<div id='error' class='error-message' ";
 
@@ -171,6 +172,32 @@
 					$data['title'] = "KLU tidak boleh kosong dan harus diisi dengan angka yang panjang maksimalnya 6";						
 					echo form_input($data);
 					unset($data['maxlength']);
+				?>
+			</td>
+		</tr>
+		<tr>
+			<th><?php echo form_label('Logo Perusahaan','logo'); ?></th>
+			<td>
+				<?php 
+						$src = ($pajak_data['logo'] && file_exists('images/uploads/'.$pajak_data['logo'])) ? $pajak_data['logo'] : 'no-image-available.jpg';
+						$pic['src'] = 'images/uploads/'.$src;
+						echo img($pic);
+						
+						$data['name'] = $data['id'] = 'logo';
+						$data['title'] = "Masukan logo perusahaan";	
+						unset($data['value']);
+						echo form_upload($data);
+				?>
+			</td>
+		</tr>
+		<tr>
+			<th><?php echo form_label('Tampilkan Logo di Laporan', 'enable_logo'); ?></th>
+			<td>
+				<?php
+					$checkbox['name'] = $checkbox['id'] = 'enable_logo';
+					$checkbox['value'] = 1;
+					$checkbox['checked'] = ($pajak_data['enable_logo']) ? TRUE : FALSE;
+					echo form_checkbox($checkbox);
 				?>
 			</td>
 		</tr>

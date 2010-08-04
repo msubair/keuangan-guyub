@@ -6,6 +6,7 @@
 	$alamat = $wajib_pajak_data['alamat'];
 	$kota = $wajib_pajak_data['kota'];
 	$sekarang = date("j").' '.nama_bulan(date("m")).' '.date("Y");
+	$url_logo = ($wajib_pajak_data['enable_logo'] == 1 && file_exists('images/uploads/'.$wajib_pajak_data['logo'])) ? 'images/uploads/'.$wajib_pajak_data['logo'] : 'images/laporan/logo.jpg';
 
 $this->fpdf->FPDF("L","cm","A4");
 $this->fpdf->SetMargins(2.5,1,2.5);
@@ -16,7 +17,7 @@ $this->fpdf->AliasNbPages();
 $this->fpdf->AddPage();
 
 $this->fpdf->Ln(1);
-$this->fpdf->Image('images/laporan/logo.jpg',2,1,2.5,2.5);
+$this->fpdf->Image($url_logo,4,0.5,5,5);
 $this->fpdf->SetFont('Times','B',14);
 $this->fpdf->Cell(24,0.7,$nama,0,0,'C');
 

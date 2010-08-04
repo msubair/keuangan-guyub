@@ -8,6 +8,7 @@ class Pajak extends Controller {
 		$this->load->library('auth');
 		$this->auth->check_user_authentification(1);
 		$this->load->model('pajak_model');
+		$this->load->helper(array('form', 'url'));
 	}
 	
 	function index()
@@ -15,6 +16,8 @@ class Pajak extends Controller {
 		$data['title'] = "Wajib Pajak";
 		$data['main_content'] = 'pajak/form';		
 		$data['pajak_data'] = $this->pajak_model->get_data();
+		$data['act'] = 'view';
+		$data['form_act'] = '';
 		$this->load->view('layout/template', $data);
 	}
 			
@@ -27,6 +30,28 @@ class Pajak extends Controller {
 		}
 		else
 		{
+			$pic = $_FILES['logo'];
+			if ($pic['name'])
+			{
+				$config['upload_path'] = 'images/uploads/';
+				$config['allowed_types'] = 'gif|jpg';
+				$config['max_size']	= '100';
+				$config['max_width']  = '1024';
+				$config['max_height']  = '768';
+				
+				$this->load->library('upload', $config);
+			
+				if ( ! $this->upload->do_upload('logo'))
+				{
+					$this->session->set_userdata('ERRMSG_ARR', 'Terjadi kesalahan saat meng-upload data : '.$this->upload->display_errors() );
+					$this->index();
+				}	
+				else
+				{
+					$upload_data = $this->upload->data();
+					$this->pajak_model->set_logo($upload_data['file_name']);
+				}
+			}
 			$this->pajak_model->fill_data();
 			if($this->pajak_model->check_data())
 			{
@@ -35,10 +60,10 @@ class Pajak extends Controller {
 			else
 			{
 				$this->insert();
-			}		
+			}	
 		}
 	}
-
+	
 	function insert()
 	{
 		if($this->pajak_model->insert_data()) 
