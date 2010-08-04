@@ -4,10 +4,16 @@ class Pajak_model extends Model {
 	
 	var $id;
 	var $data;
+	var $logo;
 
 	function Pajak_model()
 	{
 		parent::Model();
+	}
+	
+	function set_logo($pic)
+	{
+		$this->logo = $pic;
 	}
 	
 	function get_data()
@@ -37,8 +43,10 @@ class Pajak_model extends Model {
 			'klu' => $this->input->post('klu'),	
 			'pemilik' => $this->input->post('nama_pemilik'),
 			'npwp_pemilik' => $this->input->post('npwp_pemilik').$this->input->post('npwp_pemilik1').$this->input->post('npwp_pemilik2').$this->input->post('npwp_pemilik3').$this->input->post('npwp_pemilik4').$this->input->post('npwp_pemilik5'),
-			'keterangan' => $this->input->post('keterangan')
+			'keterangan' => $this->input->post('keterangan'),
+			'enable_logo' => $this->input->post('enable_logo')
 		);
+		if($this->logo) $this->data['logo'] = $this->logo;
 	}
 		
 	function check_data()

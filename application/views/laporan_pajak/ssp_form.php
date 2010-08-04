@@ -100,6 +100,19 @@
 				?>
 			</td>
 		</tr>
+		<tr>
+			<th>
+				<?php echo form_label('Terbilang *','terbilang'); ?>
+			</th>
+			<td>
+				<?php
+					$data['name'] = $data['id'] = 'terbilang';
+					$data['value'] = (set_value('terbilang')) ? set_value('terbilang') : $laporan_data['terbilang'];
+					$data['title'] = "Terbilang tidak boleh kosong";
+					echo form_input($data);
+				?>
+			</td>
+		</tr>
 	</table>
 
 	<div class="buttons">
@@ -134,7 +147,8 @@
 				map: "required digits",
 				kode: "required digits",
 				uraian: "required",
-				jumlah: "required integer"
+				jumlah: "required integer",
+				terbilang: "required"
 			}
 		});
 	});
