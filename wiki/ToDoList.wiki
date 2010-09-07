@@ -14,6 +14,7 @@
 || 10 || Membuat alternatif themes untuk aplikasi || Sugeng Doyle (sugeng.doyle@gmail.com) || - || Usulan via mailing list ||
 || 11 || Membuat standar migrasi dari aplikasi atau metode pencatatan keuangan lain (Menu Saldo Awal) || Tim Guyub (keuangan@guyub.co.id) || 100% || Sudah dibuatkan solusi berupa Input Saldo Awal pada Menu Administrasi. Akan tetapi kedepannya diharapkan ada fasilitas migrasi atau input data Bulk ||
 || 12 || Info dan analisa dalam bentuk grafik, sekarang lagi ngumpulin info dan analisa apa saja yang dibutuhkan  || Tim Guyub (keuangan@guyub.co.id) || 5% || - ||
+|| 13 || Fasilitas subgroup dari standar 5 group akun, mulai dari create subgroup sampai tampilan di laporan  || Tim Guyub (keuangan@guyub.co.id) ||- || - ||
 
 - = Tidak/belum diketahui
 
