@@ -5,7 +5,7 @@
 
 || *No* || *Nama Fitur* || *Keterangan* ||
 || 1 || Grafik Laba Rugi Bulanan || Sudah tersedia sejak rilis kedua - KG-20100717-2 ||
-|| 1 || Update logo perusahaan untuk digunakan di laporan || Baru tersedia di SVN ||
+|| 2 || Update logo perusahaan untuk digunakan di laporan || Baru tersedia di SVN ||
 
 == Fitur Akuntansi ==
 
