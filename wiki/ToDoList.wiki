@@ -3,7 +3,7 @@
 
 || *No* || *Nama Pekerjaan* || *PIC (email)* || *Progress* || *Keterangan* ||
 || 1 || Laporan Arus Kas || Tim Guyub (keuangan@guyub.co.id) || 10% || - ||
-|| 2 || Input Logo Perusahaan untuk laporan || - || - || - ||
+|| 2 || Input Logo Perusahaan untuk laporan || Arie F (ariefardiansyah1988@gmail.com)|| 100% || Sudah tersedia di SVN ||
 || 3 || Pilihan format laporan CSV, selain PDF || - || - || - ||
 || 4 || Perbaikan sistem menu dan manajemen login pengguna (ACL) || Adesanto Asman (adesantoasman@gmail.com) || - || - ||
 || 5 || Grafik Laba Rugi Bulanan dengan Open Flash Chart pada Home || Tim Guyub (keuangan@guyub.co.id) || 100% || Done sudah ada di SVN sejak revisi ke 43 dan di rilis ke-2 yang akan datang ||
