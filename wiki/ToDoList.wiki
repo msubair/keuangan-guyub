@@ -17,7 +17,7 @@
 || 13 || Fasilitas subgroup dari standar 5 group akun, mulai dari create subgroup sampai tampilan di laporan  || Tim Guyub (keuangan@guyub.co.id) ||- || - ||
 || 14 || Fasilitas untuk menggunakan PostgreSQL sebagai pengganti MySQL  || Tim Guyub (keuangan@guyub.co.id) ||- || - ||
 || 15 || Fasilitas manajemen pegawai dan tim proyek  || Tim Guyub (keuangan@guyub.co.id) ||- || - ||
-|| 16 || Pemaketan untuk distribusi Linux  || Tim Guyub (keuangan@guyub.co.id) ||- || - ||
+|| 16 || Pemaketan untuk distribusi Linux  || Tim Guyub (keuangan@guyub.co.id) ||50% || Sudah tersedia di halaman download dalam paket untuk Debian ||
 
 - = Tidak/belum diketahui
 
