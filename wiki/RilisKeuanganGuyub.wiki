@@ -15,3 +15,7 @@ Diantara rilis resmi, komunitas dapat checkout/mengambil code aplikasi terkahir 
 = Dokumentasi Pengguna =
 
 Setiap rilis Keuangan Guyub akan disertai dengan rilis dokumentasi pengguna (PDF). Nama standar file dari dokumentasi pengguna adalah; *{{{DokumentasiPengguna-(versi rilis aplikasi)}}}*. Jika ada revisi penting pada dokumentasi tersebut dan diterbitkan dokumentasi baru untuk sebuah rilis aplikasi, maka namanya akan berubah menjadi *{{{DokumentasiPengguna-(versi rilis aplikasi)-revisi-(nomor revisi)}}}*.
+
+= Rilis Paket Khusus =
+
+Keuangan Guyub juga akan tersedia dalam paket untuk beberapa distribusi GNU/Linux yang umum. Saat ini sudah tersedia paket [http://code.google.com/p/keuangan-guyub/downloads/detail?name=kg_20100717-1_all.deb Keuangan Guyub untuk Debian/Ubuntu]
