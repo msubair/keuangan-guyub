@@ -7,7 +7,9 @@ class User_model extends Model {
 	function validate_login($username, $password)
 	{
 		$this->db->where('username', $username);
-		$this->db->where('password', md5($password));
+		//$this->db->where('password', md5($password));
+		//diganti untuk nambah salt
+		$this->db->where('password', sha1("contoh_salt".md5($password)));		
 		$this->db->where('aktif', 1);
 		$query = $this->db->get('login');
 		
@@ -51,7 +53,13 @@ class User_model extends Model {
 			'administrator' => $this->input->post('administrator'),
 			'aktif' => 1
 		);
-		if($this->input->post('password')) $this->data['password'] = md5($this->input->post('password'));
+		if($this->input->post('password'))
+		{
+			//$this->data['password'] = md5($this->input->post('password'));
+			//diganti untuk nambah salt
+			$this->data['password'] = sha1("contoh_salt".md5($this->input->post('password')));			
+		}
+			
 	}
 	
 	//Check for duplicate login ID
