@@ -1,4 +1,4 @@
-Project ini adalah project lama yang dipindahkan dari http://code.google.com/p/keuangan-guyub, karena code.google.com akan ditutup oleh Google.
+Project ini adalah project lama yang hampir belum pernah diupdate sejak tahun 2012, dan dipindahkan dari http://code.google.com/p/keuangan-guyub karena code.google.com akan ditutup oleh Google.
 
 Keuangan Guyub adalah aplikasi keuangan terpadu yang diperuntukkan dan dirancang khusus untuk Usaha Kecil Menengah (UKM) yang bergerak di bidang jasa. Standar keuangan yang digunakan baik untuk akuntansi dan pajak mengacu pada standar yang berlaku di Indonesia.
 
