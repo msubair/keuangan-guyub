@@ -10,7 +10,6 @@ Lisensi CodeIgniter = ci-license.txt
 Petunjuk instalasi = install.txt
 Petunjuk upgrade dari rilis pertama = upgrade.txt
 Dokumentasi Pengguna = http://code.google.com/p/keuangan-guyub/downloads/detail?name=DokumentasiPengguna-KG-20100717-2.pdf
-Blog = http://keuangan.guyub.co.id/
 
 --
 Guyub http://guyub.co.id
